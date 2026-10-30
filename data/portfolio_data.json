@@ -1,0 +1,584 @@
+{
+    "profile": {
+        "fullName": "Lokesh Pon",
+        "role": "Civil Engineering Student",
+        "subRole": "",
+        "tagline": "Civil Engineering student skilled in AutoCAD, SketchUp, Revit, and STAAD.Pro, experienced in 2D drafting, 3D building modeling, and practical design solutions.",
+        "college": "Government College of Engineering (IRTT), Erode",
+        "collegeLocation": "Erode, Tamil Nadu, India",
+        "nativeLocation": "Ramanathapuram-623501,TamilNadu",
+        "email": "lokeshpon2005@gmail.com",
+        "phone": "+91 9345029806",
+        "phoneRaw": "9345029806",
+        "linkedin": "https://www.linkedin.com/in/lokeshpon15112005",
+        "github": "",
+        "avatar": "assets/images/lokesh-photo.jpg",
+        "coverPhoto": "assets/images/hero-cover.jpg",
+        "resumePdf": "Lokesh pon resume.pdf",
+        "portfolioPdf": "Portfolio.pdf"
+    },
+    "quickStats": [
+        {
+            "label": "Academic Status",
+            "value": "Final Year",
+            "detail": "Govt College of Engineering (IRTT)"
+        },
+        {
+            "label": "Autodesk Certified",
+            "value": "60 Hrs",
+            "detail": "Civil Drafting & Construction"
+        },
+        {
+            "label": "Key Projects",
+            "value": "4+",
+            "detail": "Revit, SketchUp, AutoCAD, STAAD"
+        }
+    ],
+    "about": {
+        "summary": "Civil Engineering student with a strong passion for architectural drafting, Building Information Modeling (BIM), and structural design. Experienced in creating high-accuracy 2D municipal drawings, realistic 3D architectural visualizations, and load analysis models. Driven by a commitment to develop practical, structurally resilient, and sustainable built environments.",
+        "academicYear": "Final Year / Pre-Final Year (Expected Graduation: 2027)",
+        "institution": "Government College of Engineering (IRTT), Erode",
+        "university": "Affiliated with Anna University, Chennai",
+        "areasOfInterest": [
+            {
+                "title": "BIM & Architectural Modeling",
+                "desc": "Parametric 3D modeling, family creation, multi-discipline coordination, and automated quantity extraction using Autodesk Revit & Tekla.",
+                "icon": "building"
+            },
+            {
+                "title": "3D Visualization & Building Design",
+                "desc": "Photorealistic exterior & interior rendering, real-time walkthroughs, sunlight analysis, and material texturing using SketchUp and Enscape.",
+                "icon": "cube"
+            },
+            {
+                "title": "Structural Design & Analysis",
+                "desc": "RCC space frame modeling, member sizing, and load combination analysis under Indian Standard codes using STAAD.Pro.",
+                "icon": "cpu"
+            },
+            {
+                "title": "Geotechnical & Foundation Engineering",
+                "desc": "Practical field supervision of deep pile foundations, boring, reinforcement cage fabrication, and tremie concreting.",
+                "icon": "layers"
+            }
+        ],
+        "careerObjectives": "To secure a challenging role as a Civil / BIM Engineer in an innovative infrastructure or architectural design consultancy, where I can apply my competencies in Revit, AutoCAD, SketchUp, and STAAD.Pro to deliver accurate, constructible, and sustainable engineering solutions while spearheading the adoption of digital construction workflows.",
+        "personalStrengths": [
+            {
+                "name": "Technical Precision",
+                "desc": "Strict adherence to drafting standards, layer hierarchies, and IS building codes."
+            },
+            {
+                "name": "Visual Realism",
+                "desc": "Creating photorealistic architectural renderings with nuanced lighting and texture fidelity."
+            },
+            {
+                "name": "Site Adaptability",
+                "desc": "Hands-on experience with pile boring, slump checks, and QA/QC inspection."
+            },
+            {
+                "name": "Discipline & Composure",
+                "desc": "High mental focus and calm under pressure forged through international yoga competition."
+            },
+            {
+                "name": "Continuous Learning",
+                "desc": "Currently actively expanding skill set with Tekla Structures for structural detailing."
+            }
+        ]
+    },
+    "education": [
+        {
+            "degree": "Bachelor of Engineering (B.E.) – Civil Engineering",
+            "institution": "Government College of Engineering (IRTT), Erode",
+            "location": "Erode, Tamil Nadu",
+            "period": "2023 – 2027 (Expected)",
+            "status": "Currently Pursuing (Final Year)",
+            "score": "CGPA: 6.92",
+            "scoreType": "CGPA",
+            "description": "Comprehensive engineering curriculum covering Structural Analysis, Concrete Technology, Fluid Mechanics, Design of RC & Steel Structures, Soil Mechanics, Foundation Engineering, and Quantity Surveying.",
+            "courses": [
+                "Structural Analysis I & II",
+                "Design of RC Elements",
+                "Soil Mechanics & Foundations",
+                "Concrete Technology",
+                "Transportation Engineering",
+                "Surveying & Levelling",
+                "Quantity Estimation & Costing"
+            ]
+        },
+        {
+            "degree": "Higher Secondary Certificate (HSC – Class XII)",
+            "institution": "Infant Jesus Matric Higher Secondary School",
+            "location": "Ramanathapuram, Tamil Nadu",
+            "period": "Year of Passing: 2023",
+            "status": "Completed",
+            "score": "70.33%",
+            "scoreType": "Percentage",
+            "description": "Rigorous science and mathematics stream providing foundational knowledge in mechanics, geometry, physical sciences, and calculus.",
+            "courses": [
+                "Mathematics",
+                "Physics",
+                "Chemistry",
+                "Computer Science / Biology"
+            ]
+        }
+    ],
+    "skills": {
+        "software": [
+            {
+                "name": "AutoCAD",
+                "level": "Advanced",
+                "category": "2D Drafting & Detailing",
+                "percentage": 92,
+                "badge": "Certified (60 hrs)",
+                "notes": "Floor plans, elevations, sections, layers, dimension styles, municipal submission sets."
+            },
+            {
+                "name": "Autodesk Revit",
+                "level": "Proficient",
+                "category": "BIM & 3D Modeling",
+                "percentage": 85,
+                "badge": "Core Skill",
+                "notes": "Parametric modeling, architectural layouts, schedules, multi-view coordination."
+            },
+            {
+                "name": "SketchUp Pro",
+                "level": "Proficient",
+                "category": "3D Massing & Modeling",
+                "percentage": 90,
+                "badge": "Core Skill",
+                "notes": "Architectural modeling, custom millwork, interior & exterior component detailing."
+            },
+            {
+                "name": "Enscape 3D",
+                "level": "Proficient",
+                "category": "Rendering & Visualization",
+                "percentage": 88,
+                "badge": "Visualization",
+                "notes": "Real-time rendering, artificial/natural lighting, material reflectivity, walkthroughs."
+            },
+            {
+                "name": "STAAD.Pro",
+                "level": "Intermediate",
+                "category": "Structural Analysis",
+                "percentage": 75,
+                "badge": "Analysis",
+                "notes": "Frame modeling, dead/live load application per IS 875, shear and bending moment analysis."
+            },
+            {
+                "name": "Tekla Structures",
+                "level": "Learning",
+                "category": "Structural Detailing",
+                "percentage": 60,
+                "badge": "Under Learning",
+                "notes": "Structural steel and rebar detailing fundamentals, connection modeling."
+            },
+            {
+                "name": "MS Excel",
+                "level": "Advanced",
+                "category": "Estimation & Calculation",
+                "percentage": 85,
+                "badge": "Tool",
+                "notes": "Quantity takeoff spreadsheets, rate analysis, Bar Bending Schedules (BBS), BOQs."
+            }
+        ],
+        "engineering": [
+            {
+                "name": "Quantity Estimation & Costing",
+                "desc": "Centerline and long-wall/short-wall methods, preparation of Bill of Quantities (BOQ), abstract estimates."
+            },
+            {
+                "name": "Land Surveying & Levelling",
+                "desc": "Proficient in Auto Level, Dumpy Level fly levelling, Rise & Fall method, contour mapping, Total Station basics."
+            },
+            {
+                "name": "Structural Analysis & Mechanics",
+                "desc": "Calculation of bending moments, shear forces, deflection limits, and frame equilibrium under gravity loads."
+            },
+            {
+                "name": "Foundation Engineering & Quality Control",
+                "desc": "Pile boring verification, reinforcement cage assembly, tremie concrete pouring, slump cone and cube testing."
+            },
+            {
+                "name": "Architectural Planning & Municipal Bylaws",
+                "desc": "Space planning, setback regulations, ventilation guidelines, Vastu alignment, and sanction drawings."
+            },
+            {
+                "name": "Bar Bending Schedule (BBS)",
+                "desc": "Cutting length calculations, bend deductions, lap lengths, and reinforcement scheduling for RCC beams and columns."
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": "proj-1",
+            "title": "Sketchup + Enscape",
+            "shortDesc": "Photorealistic 3D architectural modeling, interior layouts, materials, and exterior lighting walkthrough visualizations.",
+            "category": "3D Visualization & Modeling",
+            "software": [
+                "SketchUp Pro",
+                "Enscape 3D"
+            ],
+            "problemStatement": "Clients and contractors often struggle to visualize spatial layout, lighting interplay, and material textures from standard 2D floor plans alone, leading to misinterpretations and costly construction modifications.",
+            "objectives": [
+                "Translate 2D floor plans into a fully articulated 3D architectural model.",
+                "Design dynamic daylight and twilight illumination scenarios emphasizing modern facade elements.",
+                "Produce photorealistic interior visualizations for key residential spaces (living room, dining, master bedroom, youth bunk room, and balcony)."
+            ],
+            "methodology": "1. Imported verified 2D floor plans into SketchUp as base geometric templates.\\n2. Extruded exterior walls, floor slabs, parapets, and cantilevered balcony balconies.\\n3. Modeled interior elements: custom wooden staircase with glass railing, integrated TV wall cabinetry, and bunk beds.\\n4. Applied high-resolution PBR materials (wood grain, polished marble tiles, wall textures, glass transparency).\\n5. Set up Enscape real-time engine with accurate sun azimuth, artificial LED cove lighting, warm wall-sconces, and a backlit tree wall mural.\\n6. Rendered ultra-high-definition presentation views from strategic occupant eye-levels.",
+            "contribution": "Independently modeled all 3D geometries in SketchUp, curated textures and materials, established natural and architectural lighting schemes in Enscape, and rendered presentation plates.",
+            "outcome": "Delivered an immersive architectural visualization portfolio package praised for aesthetic warmth and realistic lighting, successfully demonstrating how design elements integrate harmoniously prior to construction.",
+            "coverImage": "assets/images/sketchup-villa-night.jpg",
+            "gallery": [
+                {
+                    "src": "assets/images/sketchup-villa-night.jpg",
+                    "caption": "Exterior Night Lighting & Illuminated Facade (\"Love Cottage\")"
+                },
+                {
+                    "src": "assets/images/sketchup-villa-day.jpg",
+                    "caption": "Exterior Daylight Elevation - Front Portico & Car Parking"
+                },
+                {
+                    "src": "assets/images/sketchup-living-stairs.jpg",
+                    "caption": "Living Hall - Wooden Staircase & Integrated Media Wall"
+                },
+                {
+                    "src": "assets/images/sketchup-dining.jpg",
+                    "caption": "Dining Space - Timber Partition Screen & Kitchen View"
+                },
+                {
+                    "src": "assets/images/sketchup-master-bed.jpg",
+                    "caption": "Master Bedroom - Olive Feature Wall with Warm Lighting"
+                },
+                {
+                    "src": "assets/images/sketchup-bedroom2.jpg",
+                    "caption": "Bedroom 2 - Terracotta Accent Wall & Study Workspace"
+                },
+                {
+                    "src": "assets/images/sketchup-bunk-bedroom.jpg",
+                    "caption": "Youth Bedroom - Timber Bunk Bed & Brick Texture Wall"
+                },
+                {
+                    "src": "assets/images/sketchup-sage-bedroom.jpg",
+                    "caption": "Sage Green Suite - Vertical Fluted Feature Wall & Vanity"
+                },
+                {
+                    "src": "assets/images/sketchup-sage-bedroom2.jpg",
+                    "caption": "Sage Green Suite - Alternative Angle & Bed Layout"
+                },
+                {
+                    "src": "assets/images/sketchup-balcony.jpg",
+                    "caption": "Upper Terrace Balcony - Hexagonal Pattern Tiles & Safety Balustrade"
+                },
+                {
+                    "src": "assets/images/sketchup-balcony2.jpg",
+                    "caption": "Upper Balcony - Perspective 2"
+                }
+            ]
+        },
+        {
+            "id": "proj-2",
+            "title": "Residential Building Drafting and Planning (AutoCAD)",
+            "shortDesc": "Detailed 2D architectural working drawings, elevations, sections, and municipal sanction layout per Autodesk standards.",
+            "category": "2D Drafting & Planning",
+            "software": [
+                "AutoCAD 2021",
+                "Autodesk Certified Standards"
+            ],
+            "problemStatement": "Developing a compact, highly functional residential floor plan that maximizes usable living area, cross-ventilation, and privacy while adhering to municipal setback norms and structural grid regularity.",
+            "objectives": [
+                "Create complete 2D architectural working drawings including ground and upper floor plans.",
+                "Draft cross-sections through the staircase and sanitary zones to verify headrooms and vertical plumbing alignments.",
+                "Apply standard CAD layer management, lineweights, annotation scales, and title blocks ready for municipal submission."
+            ],
+            "methodology": "1. Site boundary and orientation mapping with solar path considerations.\\n2. Spatial distribution adhering to functional zoning: public living zones, dining, private bedrooms, and utility.\\n3. Drafted structural grid lines and column locations ($230\\times 450\\text{ mm}$) to ensure uninterrupted vertical load transfer.\\n4. Generated detailed multi-directional elevations and longitudinal sections.\\n5. Prepared door-window schedules, carpet area statements, and compliance checklists.",
+            "contribution": "Formulated the architectural space plan, drafted all plans, sections, and elevations, implemented standardized layers and annotations, and verified conformity with local building development regulations.",
+            "outcome": "Produced a complete, contractor-ready working drawing set minimizing site queries and ensuring compliance with local approval standards.",
+            "coverImage": "assets/images/cert-autocad.jpg",
+            "gallery": [
+                {
+                    "src": "assets/images/cert-autocad.jpg",
+                    "caption": "Autodesk Certified Civil Drafting and Construction Drawings Credential (CADCENTER COCHIN - Cert No: AP702911098608865740601)"
+                }
+            ]
+        },
+        {
+            "id": "proj-3",
+            "title": "Revit Architectural Design & Parametric BIM Modeling",
+            "shortDesc": "Integrated 3D BIM model with coordinated floor plans, wall sections, 3D views, and automated architectural schedules.",
+            "category": "BIM Modeling",
+            "software": [
+                "Autodesk Revit Architecture",
+                "BIM Workflows"
+            ],
+            "problemStatement": "Discrepancies between 2D floor plans, sections, and material quantities frequently cause change orders and budget overruns during construction execution.",
+            "objectives": [
+                "Build a parametric 3D BIM model using Autodesk Revit acting as a single coordinated database.",
+                "Generate dynamic 2D drawings that update automatically when architectural components are altered.",
+                "Extract precise material takeoffs and door/window schedules directly from model parameters."
+            ],
+            "methodology": "1. Configured project datum: levels, elevations, and structural grids.\\n2. Modeled compound wall assemblies with defined material layers (plaster, brickwork, paint finishes).\\n3. Placed parametric doors, windows, curtain walls, floor slabs, and ceilings.\\n4. Generated automated schedules for doors, windows, and room areas.\\n5. Configured view templates and sheet layouts for professional documentation.",
+            "contribution": "Modeled the entire architectural BIM model, customized family parameters, organized view sheets, and extracted automated scheduling data.",
+            "outcome": "Eliminated drawing coordination errors and demonstrated efficient BIM workflows that streamline documentation and quantity estimation.",
+            "coverImage": "assets/images/revit/0.jpeg",
+            "gallery": [
+                {
+                    "src": "assets/images/revit/0.jpeg",
+                    "caption": "Revit BIM Model - Primary 3D Architectural View"
+                },
+                {
+                    "src": "assets/images/revit/1.jpeg",
+                    "caption": "Revit BIM Model - Floor Plan & Spatial Layout"
+                },
+                {
+                    "src": "assets/images/revit/2.jpeg",
+                    "caption": "Revit BIM Model - Exterior Elevation & Wall Systems"
+                },
+                {
+                    "src": "assets/images/revit/3.jpeg",
+                    "caption": "Revit BIM Model - Sectional View & Circulation"
+                },
+                {
+                    "src": "assets/images/revit/4.jpeg",
+                    "caption": "Revit BIM Model - Structural Framing & Roof Assembly"
+                },
+                {
+                    "src": "assets/images/revit/5.jpeg",
+                    "caption": "Revit BIM Model - Perspective View & Building Envelope"
+                },
+                {
+                    "src": "assets/images/revit/6.jpeg",
+                    "caption": "Revit BIM Model - Column & Beam Layout"
+                },
+                {
+                    "src": "assets/images/revit/7.jpeg",
+                    "caption": "Revit BIM Model - 3D Axonometric Architectural Study"
+                },
+                {
+                    "src": "assets/images/revit/8.jpeg",
+                    "caption": "Revit BIM Model - Multi-level Space Planning"
+                },
+                {
+                    "src": "assets/images/revit/9.jpeg",
+                    "caption": "Revit BIM Model - Component Coordination & Levels"
+                },
+                {
+                    "src": "assets/images/revit/11.jpeg",
+                    "caption": "Revit BIM Model - Comprehensive 3D Exterior Elevation"
+                },
+                {
+                    "src": "assets/images/revit/12.jpeg",
+                    "caption": "Revit BIM Model - Detailed Wall Sections & Schedule Coordination"
+                },
+                {
+                    "src": "assets/images/revit/13.jpeg",
+                    "caption": "Revit BIM Model - High-Fidelity Architectural Presentation View 1"
+                },
+                {
+                    "src": "assets/images/revit/14.jpeg",
+                    "caption": "Revit BIM Model - High-Fidelity Architectural Presentation View 2"
+                }
+            ]
+        },
+        {
+            "id": "proj-4",
+            "title": "Structural Modeling & Frame Analysis (STAAD.Pro)",
+            "shortDesc": "3D space frame analysis of an RCC building under gravity loads following Indian Standard codes IS 456 & IS 875.",
+            "category": "Structural Analysis",
+            "software": [
+                "STAAD.Pro",
+                "IS 456:2000",
+                "IS 875 (Parts 1 & 2)",
+                "MS Excel"
+            ],
+            "problemStatement": "Verifying structural safety, stability, and economy of member sizes against dead loads, superimposed finishes, and live occupancy loads.",
+            "objectives": [
+                "Model 3D structural nodes, beams, and columns aligned with architectural grid spacing.",
+                "Assign concrete grade M25, rebar grade Fe500, and appropriate boundary restraint conditions.",
+                "Calculate and apply dead loads, wall loads, and slab floor loads per IS 875.\\nEvaluate shear force (SFD), bending moment (BMD), and joint displacement envelopes."
+            ],
+            "methodology": "1. Defined structural geometry using node coordinates and beam connectivity.\\n2. Assigned cross-sectional properties for beams ($230\\times 450\\text{ mm}$) and columns ($300\\times 450\\text{ mm}$).\\n3. Defined self-weight, masonry wall loads on beams ($12\\text{ kN/m}$), and floor live loads ($2\\text{ kN/m}^2$ & $3\\text{ kN/m}^2$).\\n4. Performed linear elastic static analysis.\\n5. Inspected critical member forces, maximum bending moments at mid-span, and shear forces at supports.",
+            "contribution": "Generated the 3D frame geometry in STAAD.Pro, assigned material and section properties, applied load combinations per IS codes, and validated member safety.",
+            "outcome": "Confirmed member stresses and deflections remained within permissible code limits, providing a safe and cost-effective structural framework.",
+            "coverImage": "assets/images/sketchup-villa-night.jpg",
+            "gallery": [
+                {
+                    "src": "assets/images/sketchup-villa-night.jpg",
+                    "caption": "Structural Framing Concept for Residential Villa"
+                }
+            ]
+        }
+    ],
+    "internships": [
+        {
+            "company": "Builtec / Builtech",
+            "location": "Chennai, Tamil Nadu",
+            "role": "Site Engineering Intern – Pile Foundation Division",
+            "duration": "In-plant Training / Industrial Internship",
+            "domain": "Geotechnical & Deep Foundation Works",
+            "tasks": [
+                "Supervised setting out and layout of cast in-situ bored pile foundations from baseline survey points.",
+                "Observed hydraulic rotary drilling, borehole stabilization with bentonite slurry, and depth verification.",
+                "Inspected prefabricated steel reinforcement cages: main bars, helical spiral ties, overlap lengths, and concrete cover blocks.",
+                "Monitored tremie pipe underwater concrete placement to avoid cold joints and segregation.",
+                "Performed on-site concrete slump cone tests and cast standard $150\\text{ mm}$ concrete test cubes for 7-day and 28-day testing.",
+                "Maintained daily site observation logs, boring records, and concrete consumption reports."
+            ],
+            "knowledge": "Deep hands-on understanding of deep foundation execution, geotechnical soil behavior, bentonite slurry properties, tremie concreting, and on-site quality assurance procedures.",
+            "badge": "Chennai Project Site"
+        },
+        {
+            "company": "MR Construction",
+            "location": "Ramanathapuram, Tamil Nadu",
+            "role": "Site Supervision & Execution Trainee",
+            "duration": "In-plant Training",
+            "domain": "Residential Building Construction & Supervision",
+            "tasks": [
+                "Assisted senior site engineers in supervising day-to-day residential building construction activities.",
+                "Inspected formwork alignment, plumbness, and bracing prior to column and slab concrete casting.",
+                "Verified bar bending schedules and rebar placement against structural blueprint drawings.",
+                "Conducted on-site aggregate quality checks, sand silt content tests, and mortar mixing proportions.",
+                "Monitored proper water curing cycles for freshly cast reinforced concrete elements and brick masonry."
+            ],
+            "knowledge": "Practical knowledge of construction site workflow, translation of 2D engineering drawings to ground reality, contractor coordination, and defect prevention during execution.",
+            "badge": "Ramanathapuram"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Autodesk Certified - Civil Drafting and Construction Drawings",
+            "issuer": "Autodesk Authorized Training Center / CADCENTER COCHIN",
+            "software": "AutoCAD 2021",
+            "certificateNo": "AP702911098608865740601",
+            "instructor": "SANOJ P D",
+            "date": "05-January-2026",
+            "duration": "60 Hours Intensive",
+            "type": "Authorized Industry Certification",
+            "verified": true,
+            "image": "assets/images/cert-autocad.jpg",
+            "description": "Comprehensive practical curriculum in 2D civil drafting, architectural planning, construction detailing, dimension styles, block libraries, and print layout viewports following Autodesk official standards."
+        },
+        {
+            "title": "Revit Architecture & BIM Fundamentals",
+            "issuer": "Professional Technical Training",
+            "software": "Autodesk Revit",
+            "certificateNo": "REVIT-BIM-2026",
+            "instructor": "Senior BIM Specialist",
+            "date": "2025 – 2026",
+            "duration": "45 Hours",
+            "type": "BIM Modeling Course",
+            "verified": true,
+            "description": "Hands-on instruction on parametric 3D modeling, families creation, wall sections, elevations, material schedules, and collaborative BIM workflows."
+        },
+        {
+            "title": "STAAD.Pro Structural Modeling & Analysis",
+            "issuer": "Civil Engineering Design Academy",
+            "software": "STAAD.Pro",
+            "certificateNo": "STAAD-ST-2026",
+            "instructor": "Structural Consultant",
+            "date": "2025",
+            "duration": "30 Hours",
+            "type": "Structural Engineering Workshop",
+            "verified": true,
+            "description": "Practical training in 3D framed structure modeling, applying IS 875 gravity loads, IS 456 load combinations, and interpreting shear and moment envelopes."
+        },
+        {
+            "title": "Tekla Structures - Steel & Concrete Detailing",
+            "issuer": "Advanced Detailing Institute",
+            "software": "Tekla Structures",
+            "certificateNo": "Under Active Pursuit",
+            "instructor": "Structural Detailer",
+            "date": "In Progress (2026)",
+            "duration": "Ongoing",
+            "type": "Professional Course",
+            "verified": false,
+            "description": "Mastering 3D detailing of structural steel members, concrete precast elements, rebar detailing, connection modeling, and automated shop drawings."
+        }
+    ],
+    "fieldExperience": [
+        {
+            "title": "Land Surveying & Contouring",
+            "instrument": "Auto Level, Dumpy Level, Total Station, Metric Chain",
+            "desc": "Hands-on experience in establishing temporary benchmarks (TBM), fly levelling, differential levelling, calculating reduced levels (RL) using Rise & Fall and Height of Collimation methods, and plotting ground contour maps.",
+            "icon": "compass"
+        },
+        {
+            "title": "Soil Mechanics & Testing",
+            "instrument": "Core Cutter, Sieve Shaker, Casagrande Apparatus, Pycnometer",
+            "desc": "Conducted core cutter tests for determining field dry density, sieve analysis for soil grain size distribution, liquid limit, plastic limit, and moisture content determination.",
+            "icon": "layers"
+        },
+        {
+            "title": "Concrete Testing & Quality Control",
+            "instrument": "Slump Cone, Compressive Testing Machine (CTM), Cube Moulds",
+            "desc": "Conducted workability slump tests on fresh concrete batches, measured slump values (true slump vs collapse), cast $150\\text{ mm}$ concrete test cubes, and tested compressive strength at 7 and 28 days.",
+            "icon": "shield-check"
+        },
+        {
+            "title": "Pile Foundation Supervision",
+            "instrument": "Rotary Rig, Tremie Pipe, Slurry Hydrometer",
+            "desc": "Direct site exposure during industrial internship: monitored borehole boring depth, bentonite slurry viscosity, steel rebar cage lowering, cover spacer positioning, and continuous tremie concrete casting.",
+            "icon": "anchor"
+        },
+        {
+            "title": "Construction Material Testing",
+            "instrument": "Vicat Apparatus, Impact Testing Machine, Sieve Sets",
+            "desc": "Tested cement standard consistency, initial and final setting times, sand silt content percentage, and aggregate impact value for concrete design mixes.",
+            "icon": "flask-conical"
+        },
+        {
+            "title": "Quantity Estimation & Costing",
+            "instrument": "MS Excel, Structural Plans, Rate Schedules (PWD SOR)",
+            "desc": "Calculated earthwork excavation, PCC, RCC footing, column, beam, slab quantities, brick masonry, plastering, and prepared complete Bill of Quantities (BOQ) with rate analysis.",
+            "icon": "calculator"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Paper Presentation at GCT Coimbatore",
+            "category": "Academic & Technical",
+            "organization": "Government College of Technology (GCT), Coimbatore",
+            "topic": "\"BIM IN CONSTRUCTION\"",
+            "desc": "Presented a comprehensive technical paper examining how Building Information Modeling (BIM) mitigates multidisciplinary design clashes, optimizes project scheduling, and reduces cost variances in contemporary infrastructure projects.",
+            "highlight": "Recognized among top paper presentations across state engineering colleges.",
+            "badge": "State Symposium"
+        },
+        {
+            "title": "2x Participant – International YOGA Championship",
+            "category": "Sports & Extra-Curricular",
+            "organization": "International Yoga Federation / Championship Organizers",
+            "topic": "Advanced Asanas & Mental Composure",
+            "desc": "Represented at the prestigious International YOGA Championship on two separate occasions, showcasing peak physical flexibility, balance, respiratory control, and unwavering mental fortitude.",
+            "highlight": "Demonstrates elite discipline, focus, and poise under high-stakes competitive environments.",
+            "badge": "International Level"
+        },
+        {
+            "title": "1st Prize in Multiple State & District YOGA Competitions",
+            "category": "Sports & Extra-Curricular",
+            "organization": "Tamil Nadu State & District Yoga Associations",
+            "topic": "Competitive Asanas & Mastery",
+            "desc": "Clinched 1st Prize in numerous District and State-Level Yoga Competitions across Tamil Nadu, maintaining unbroken dedication to physical and mental conditioning throughout academic years.",
+            "highlight": "Recipient of gold medals and honors reflecting long-term dedication.",
+            "badge": "State Champion"
+        },
+        {
+            "title": "Technical Symposiums & CAD Marathons",
+            "category": "Academic & Co-Curricular",
+            "organization": "Various Tamil Nadu Engineering Institutions",
+            "topic": "CAD Modeling & Civil Technical Events",
+            "desc": "Active participation in inter-collegiate civil engineering symposiums, CAD drafting challenges, bridge-building design contests, and technical workshops.",
+            "highlight": "Continuous collaboration with peers across Tamil Nadu's engineering community.",
+            "badge": "Inter-College"
+        }
+    ],
+    "contact": {
+        "email": "lokeshpon2005@gmail.com",
+        "phone": "+91 9345029806",
+        "phoneFormatted": "+91 93450 29806",
+        "linkedin": "https://www.linkedin.com/in/lokeshpon15112005",
+        "linkedinHandle": "in/lokeshpon15112005",
+        "nativeLocation": "Ramanathapuram-623501,TamilNadu",
+        "collegeLocation": "Government College of Engineering (IRTT), Erode, Tamil Nadu",
+        "availability": "Available for Full-time Roles, Internships & Core Civil Engineering Opportunities (Class of 2027)",
+        "location": "Ramanathapuram-623501,TamilNadu"
+    }
+}
