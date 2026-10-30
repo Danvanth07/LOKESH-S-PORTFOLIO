@@ -6,6 +6,9 @@ $baseDir = dirname(__DIR__);
 if ($type === 'portfolio') {
     $filePath = $baseDir . DIRECTORY_SEPARATOR . 'Portfolio.pdf';
     $downloadName = 'Lokesh_Pon_Civil_Engineering_Portfolio.pdf';
+} elseif ($type === 'staad') {
+    $filePath = $baseDir . DIRECTORY_SEPARATOR . 'revit project case study phographs' . DIRECTORY_SEPARATOR . 'Lokesh Pon Final Staad.pdf';
+    $downloadName = 'Lokesh_Pon_STAAD_Pro_Structural_Analysis.pdf';
 } else {
     $filePath = $baseDir . DIRECTORY_SEPARATOR . 'Lokesh pon resume.pdf';
     $downloadName = 'Lokesh_Pon_Civil_Engineering_Resume.pdf';

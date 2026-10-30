@@ -227,7 +227,7 @@
             "methodology": "1. Imported verified 2D floor plans into SketchUp as base geometric templates.\\n2. Extruded exterior walls, floor slabs, parapets, and cantilevered balcony balconies.\\n3. Modeled interior elements: custom wooden staircase with glass railing, integrated TV wall cabinetry, and bunk beds.\\n4. Applied high-resolution PBR materials (wood grain, polished marble tiles, wall textures, glass transparency).\\n5. Set up Enscape real-time engine with accurate sun azimuth, artificial LED cove lighting, warm wall-sconces, and a backlit tree wall mural.\\n6. Rendered ultra-high-definition presentation views from strategic occupant eye-levels.",
             "contribution": "Independently modeled all 3D geometries in SketchUp, curated textures and materials, established natural and architectural lighting schemes in Enscape, and rendered presentation plates.",
             "outcome": "Delivered an immersive architectural visualization portfolio package praised for aesthetic warmth and realistic lighting, successfully demonstrating how design elements integrate harmoniously prior to construction.",
-            "coverImage": "assets/images/sketchup-villa-night.jpg",
+            "coverImage": "assets/images/covers/cover-sketchup-enscape.jpg",
             "gallery": [
                 {
                     "src": "assets/images/sketchup-villa-night.jpg",
@@ -293,7 +293,7 @@
             "methodology": "1. Site boundary and orientation mapping with solar path considerations.\\n2. Spatial distribution adhering to functional zoning: public living zones, dining, private bedrooms, and utility.\\n3. Drafted structural grid lines and column locations ($230\\times 450\\text{ mm}$) to ensure uninterrupted vertical load transfer.\\n4. Generated detailed multi-directional elevations and longitudinal sections.\\n5. Prepared door-window schedules, carpet area statements, and compliance checklists.",
             "contribution": "Formulated the architectural space plan, drafted all plans, sections, and elevations, implemented standardized layers and annotations, and verified conformity with local building development regulations.",
             "outcome": "Produced a complete, contractor-ready working drawing set minimizing site queries and ensuring compliance with local approval standards.",
-            "coverImage": "assets/images/cert-autocad.jpg",
+            "coverImage": "assets/images/covers/cover-autocad.jpg",
             "gallery": [
                 {
                     "src": "assets/images/cert-autocad.jpg",
@@ -319,7 +319,7 @@
             "methodology": "1. Configured project datum: levels, elevations, and structural grids.\\n2. Modeled compound wall assemblies with defined material layers (plaster, brickwork, paint finishes).\\n3. Placed parametric doors, windows, curtain walls, floor slabs, and ceilings.\\n4. Generated automated schedules for doors, windows, and room areas.\\n5. Configured view templates and sheet layouts for professional documentation.",
             "contribution": "Modeled the entire architectural BIM model, customized family parameters, organized view sheets, and extracted automated scheduling data.",
             "outcome": "Eliminated drawing coordination errors and demonstrated efficient BIM workflows that streamline documentation and quantity estimation.",
-            "coverImage": "assets/images/revit/0.jpeg",
+            "coverImage": "assets/images/covers/cover-revit.jpg",
             "gallery": [
                 {
                     "src": "assets/images/revit/0.jpeg",
@@ -399,13 +399,14 @@
             "methodology": "1. Defined structural geometry using node coordinates and beam connectivity.\\n2. Assigned cross-sectional properties for beams ($230\\times 450\\text{ mm}$) and columns ($300\\times 450\\text{ mm}$).\\n3. Defined self-weight, masonry wall loads on beams ($12\\text{ kN/m}$), and floor live loads ($2\\text{ kN/m}^2$ & $3\\text{ kN/m}^2$).\\n4. Performed linear elastic static analysis.\\n5. Inspected critical member forces, maximum bending moments at mid-span, and shear forces at supports.",
             "contribution": "Generated the 3D frame geometry in STAAD.Pro, assigned material and section properties, applied load combinations per IS codes, and validated member safety.",
             "outcome": "Confirmed member stresses and deflections remained within permissible code limits, providing a safe and cost-effective structural framework.",
-            "coverImage": "assets/images/sketchup-villa-night.jpg",
+            "coverImage": "assets/images/covers/cover-staad.jpg",
             "gallery": [
                 {
-                    "src": "assets/images/sketchup-villa-night.jpg",
-                    "caption": "Structural Framing Concept for Residential Villa"
+                    "src": "assets/images/covers/cover-staad.jpg",
+                    "caption": "Structural Space Frame Analysis & Member Stress Distribution (STAAD.Pro)"
                 }
-            ]
+            ],
+            "reportPdf": "api/download.php?file=staad"
         }
     ],
     "internships": [

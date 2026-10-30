@@ -910,6 +910,14 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
           <p class="study-text" style="font-weight: 600; color: var(--text-primary);">{{ selectedProject.outcome }}</p>
         </div>
 
+        <!-- Attached Report / Document (if available) -->
+        <div v-if="selectedProject.reportPdf" class="study-section" style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-color);">
+          <a :href="selectedProject.reportPdf" class="btn btn-primary" download style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>Download Full Structural Analysis Report (PDF)</span>
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
