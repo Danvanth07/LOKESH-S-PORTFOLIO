@@ -912,10 +912,23 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
 
         <!-- Attached Report / Document (if available) -->
         <div v-if="selectedProject.reportPdf" class="study-section" style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-color);">
-          <a :href="selectedProject.reportPdf" class="btn btn-primary" download style="display: inline-flex; align-items: center; gap: 8px;">
+          <div class="study-heading" style="color: var(--primary);">
             <i class="fa-solid fa-file-pdf"></i>
-            <span>Download Full Structural Analysis Report (PDF)</span>
-          </a>
+            <span>Structural Analysis Report (STAAD.Pro)</span>
+          </div>
+          <!-- Inline PDF Preview -->
+          <iframe
+            :src="selectedProject.reportPdf + '&inline=1'"
+            style="width:100%; height: 520px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-top: 12px; background: #fff;"
+            title="STAAD.Pro Structural Analysis Report"
+          ></iframe>
+          <!-- Download Button -->
+          <div style="margin-top: 14px;">
+            <a :href="selectedProject.reportPdf" class="btn btn-primary" download style="display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Full Structural Analysis Report (PDF)</span>
+            </a>
+          </div>
         </div>
 
       </div>
