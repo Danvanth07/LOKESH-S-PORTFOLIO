@@ -19,7 +19,11 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a0f1d">
   <title><?php echo htmlspecialchars($pageTitle); ?></title>
   
   <meta name="description" content="Civil Engineering Portfolio of Lokesh Pon - Government College of Engineering (IRTT), Erode. Specializing in BIM, Architectural Drafting, 3D Visualization (Revit, SketchUp, Enscape, AutoCAD), and Structural Analysis (STAAD.Pro).">
@@ -32,8 +36,10 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
   <meta property="og:image" content="assets/images/sketchup-villa-night.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Favicon -->
+  <!-- Favicon & PWA Manifest -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,6 +86,18 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
         <li class="nav-item"><a href="#field-work" @click="scrollToSection('field-work')">Field Work</a></li>
         <li class="nav-item"><a href="#achievements" @click="scrollToSection('achievements')">Activities</a></li>
         <li class="nav-item"><a href="#contact" @click="scrollToSection('contact')">Contact</a></li>
+
+        <!-- Mobile Drawer Quick Actions (Visible only in mobile drawer) -->
+        <li class="mobile-drawer-cta">
+          <button class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 10px;" @click="downloadResume('resume'); mobileMenuOpen = false;">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Resume (PDF)</span>
+          </button>
+          <button class="btn btn-outline" style="width: 100%; justify-content: center;" @click="openUploadModal('coverPhoto'); mobileMenuOpen = false;">
+            <i class="fa-solid fa-camera"></i>
+            <span>Change Cover Photo</span>
+          </button>
+        </li>
       </ul>
 
       <div class="nav-actions">
@@ -88,20 +106,20 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
           <i :class="currentTheme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"></i>
         </button>
 
-        <!-- Quick Upload Cover Button -->
-        <button class="btn btn-outline" style="padding: 7px 14px; font-size: 0.8rem;" @click="openUploadModal('coverPhoto')" title="Upload or Change Cover Photo">
+        <!-- Quick Upload Cover Button (Desktop only; on mobile accessible via drawer & hero trigger) -->
+        <button class="btn btn-outline btn-cover-nav" style="padding: 7px 14px; font-size: 0.8rem;" @click="openUploadModal('coverPhoto')" title="Upload or Change Cover Photo">
           <i class="fa-solid fa-image"></i>
           <span>Cover Photo</span>
         </button>
 
         <!-- Resume Download CTA -->
-        <button class="btn btn-primary" style="padding: 7px 16px; font-size: 0.82rem;" @click="downloadResume('resume')">
+        <button class="btn btn-primary btn-resume-nav" style="padding: 7px 16px; font-size: 0.82rem;" @click="downloadResume('resume')">
           <i class="fa-solid fa-file-arrow-down"></i>
           <span>Resume</span>
         </button>
 
         <!-- Mobile Menu Toggle -->
-        <button class="icon-btn mobile-toggle" @click="mobileMenuOpen = !mobileMenuOpen">
+        <button class="icon-btn mobile-toggle" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle navigation menu">
           <i :class="mobileMenuOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
         </button>
       </div>
@@ -919,12 +937,12 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
           <!-- Inline PDF Preview -->
           <iframe
             :src="selectedProject.reportPdf + '&inline=1'"
-            style="width:100%; height: 520px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-top: 12px; background: #fff;"
+            class="study-pdf-viewer"
             title="STAAD.Pro Structural Analysis Report"
           ></iframe>
           <!-- Download Button -->
           <div style="margin-top: 14px;">
-            <a :href="selectedProject.reportPdf" class="btn btn-primary" download style="display: inline-flex; align-items: center; gap: 8px;">
+            <a :href="selectedProject.reportPdf" class="btn btn-primary btn-study-download" download target="_blank">
               <i class="fa-solid fa-file-arrow-down"></i>
               <span>Download Full Structural Analysis Report (PDF)</span>
             </a>

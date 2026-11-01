@@ -3,13 +3,18 @@
  * Vue 3 Application Controller
  */
 
-const { createApp, ref, computed, onMounted } = Vue;
+const { createApp, ref, computed, onMounted, watch } = Vue;
 
 const app = createApp({
   setup() {
     // Theme State
     const currentTheme = ref(localStorage.getItem('loki_theme') || 'dark');
     const mobileMenuOpen = ref(false);
+
+    // Lock/unlock body scroll when mobile nav is open
+    watch(mobileMenuOpen, (open) => {
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
 
     // Main Portfolio Data
     const portfolio = ref(window.INITIAL_PORTFOLIO_DATA || null);
