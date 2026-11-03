@@ -131,8 +131,7 @@ $emailBody = "Hello Lokesh,\n\n"
            . "MESSAGE:\n"
            . $message . "\n\n"
            . "=========================================================\n"
-           . "Tip: You can reply directly to this email to respond to " . $name . ".\n"
-           . "Or view all past submissions at: inquiries.php\n";
+           . "Tip: You can reply directly to this email to respond to " . $name . ".\n";
 
 $headers = "From: Lokesh Portfolio <no-reply@lokeshpon.com>\r\n"
          . "Reply-To: " . $email . "\r\n"
