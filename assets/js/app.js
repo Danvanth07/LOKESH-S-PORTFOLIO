@@ -26,6 +26,7 @@ const app = createApp({
     const selectedProject = ref(null);
     const selectedCert = ref(null);
     const lightboxImage = ref(null);
+    const resumeModalOpen = ref(false);
 
     // Cover Photo Upload Modal State
     const coverModalOpen = ref(false);
@@ -109,6 +110,17 @@ const app = createApp({
 
     const closeCertModal = () => {
       selectedCert.value = null;
+      document.body.style.overflow = '';
+    };
+
+    // Resume Modal Handlers
+    const openResumeModal = () => {
+      resumeModalOpen.value = true;
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeResumeModal = () => {
+      resumeModalOpen.value = false;
       document.body.style.overflow = '';
     };
 
@@ -249,6 +261,16 @@ const app = createApp({
     onMounted(() => {
       document.documentElement.setAttribute('data-theme', currentTheme.value);
       loadData();
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (resumeModalOpen.value) closeResumeModal();
+          if (selectedProject.value) closeProjectModal();
+          if (selectedCert.value) closeCertModal();
+          if (coverModalOpen.value) closeUploadModal();
+          if (lightboxImage.value) closeLightbox();
+        }
+      });
     });
 
     return {
@@ -284,6 +306,9 @@ const app = createApp({
       onFileSelected,
       submitUpload,
       submitContact,
+      resumeModalOpen,
+      openResumeModal,
+      closeResumeModal,
       downloadResume,
       scrollToSection
     };

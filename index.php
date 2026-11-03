@@ -89,6 +89,10 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
 
         <!-- Mobile Drawer Quick Actions (Visible only in mobile drawer) -->
         <li class="mobile-drawer-cta">
+          <button class="btn btn-outline" style="width: 100%; justify-content: center; margin-bottom: 8px;" @click="openResumeModal(); mobileMenuOpen = false;">
+            <i class="fa-solid fa-eye"></i>
+            <span>View Resume (PDF)</span>
+          </button>
           <button class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 10px;" @click="downloadResume('resume'); mobileMenuOpen = false;">
             <i class="fa-solid fa-file-arrow-down"></i>
             <span>Download Resume (PDF)</span>
@@ -106,14 +110,13 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
           <i :class="currentTheme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"></i>
         </button>
 
-        <!-- Quick Upload Cover Button (Desktop only; on mobile accessible via drawer & hero trigger) -->
-        <button class="btn btn-outline btn-cover-nav" style="padding: 7px 14px; font-size: 0.8rem;" @click="openUploadModal('coverPhoto')" title="Upload or Change Cover Photo">
-          <i class="fa-solid fa-image"></i>
-          <span>Cover Photo</span>
-        </button>
 
-        <!-- Resume Download CTA -->
-        <button class="btn btn-primary btn-resume-nav" style="padding: 7px 16px; font-size: 0.82rem;" @click="downloadResume('resume')">
+        <!-- Resume Actions (View & Download) -->
+        <button class="btn btn-outline btn-resume-nav" style="padding: 7px 13px; font-size: 0.82rem;" @click="openResumeModal" title="View Resume">
+          <i class="fa-solid fa-eye"></i>
+          <span>View</span>
+        </button>
+        <button class="btn btn-primary btn-resume-nav" style="padding: 7px 14px; font-size: 0.82rem;" @click="downloadResume('resume')" title="Download Resume PDF">
           <i class="fa-solid fa-file-arrow-down"></i>
           <span>Resume</span>
         </button>
@@ -132,20 +135,10 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
   <section id="home" class="hero-section">
     <div class="container">
       
-      <!-- Cover Photo with Upload Button -->
+      <!-- Cover Photo -->
       <div class="hero-cover-wrapper">
         <img :src="portfolio?.profile?.coverPhoto || 'assets/images/hero-cover.jpg'" alt="Architectural 3D Cover" class="hero-cover-img">
         <div class="hero-cover-overlay"></div>
-        
-        <div class="cover-badge-tag">
-          <i class="fa-solid fa-cube"></i>
-          <span>3D Architectural Rendering (SketchUp + Enscape)</span>
-        </div>
-
-        <button class="cover-upload-trigger" @click="openUploadModal('coverPhoto')">
-          <i class="fa-solid fa-camera"></i>
-          <span>Change Cover Photo</span>
-        </button>
       </div>
 
       <!-- Hero Main Profile Card -->
@@ -193,16 +186,16 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
               "{{ portfolio?.profile?.tagline || 'Transforming architectural visions into precision 2D drawings, 3D photorealistic BIM models, and resilient structural designs.' }}"
             </p>
 
-            <!-- Mandatory Buttons: Download Resume & Contact Me -->
+            <!-- Mandatory Buttons: View Resume, Download Resume & Contact Me -->
             <div class="hero-cta-group">
-              <button class="btn btn-primary" @click="downloadResume('resume')">
-                <i class="fa-solid fa-file-pdf"></i>
-                <span>Download Resume (PDF)</span>
+              <button class="btn btn-outline" @click="openResumeModal" title="View Resume on-screen">
+                <i class="fa-solid fa-eye"></i>
+                <span>View Resume</span>
               </button>
-              
-              <button class="btn btn-outline" @click="downloadResume('portfolio')">
-                <i class="fa-solid fa-book-open"></i>
-                <span>View Full Portfolio (PDF)</span>
+
+              <button class="btn btn-primary" @click="downloadResume('resume')" title="Download official PDF copy">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download Resume (PDF)</span>
               </button>
 
               <button class="btn btn-accent" @click="scrollToSection('contact')">
@@ -728,23 +721,22 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
             </div>
           </div>
 
-          <!-- Resume & Portfolio Downloads -->
+          <!-- Resume & Document Access (View & Download) -->
           <div class="resume-download-box glass-panel">
             <h4>
-              <i class="fa-solid fa-download" style="color: var(--accent);"></i>
-              <span>Download Documents</span>
+              <i class="fa-solid fa-file-lines" style="color: var(--accent);"></i>
+              <span>Official Resume / CV</span>
             </h4>
-            <p>Directly download official copies of Lokesh Pon's civil engineering resume and full portfolio document.</p>
+            <p>Preview credentials directly in your browser or download an official PDF copy for your records.</p>
 
             <div class="resume-btn-group">
-              <button class="btn btn-primary" @click="downloadResume('resume')">
-                <i class="fa-solid fa-file-pdf"></i>
-                <span>Download Resume</span>
+              <button class="btn btn-outline" @click="openResumeModal" title="View Resume on-screen">
+                <i class="fa-solid fa-eye"></i>
+                <span>View Resume</span>
               </button>
-              
-              <button class="btn btn-outline" @click="downloadResume('portfolio')">
-                <i class="fa-solid fa-file-lines"></i>
-                <span>Download Portfolio</span>
+              <button class="btn btn-primary" @click="downloadResume('resume')" title="Download Resume PDF">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download Resume</span>
               </button>
             </div>
           </div>
@@ -836,6 +828,69 @@ $initialDataJson = json_encode($portfolioData, JSON_UNESCAPED_SLASHES | JSON_UNE
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================
+       RESUME VIEWER & DOWNLOAD MODAL
+       ========================================== -->
+  <div v-if="resumeModalOpen" class="modal-overlay" @click.self="closeResumeModal">
+    <div class="modal-dialog resume-modal-dialog">
+      <button class="modal-close-btn" @click="closeResumeModal" title="Close Resume Modal" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header resume-modal-header">
+        <div class="resume-modal-title-group">
+          <span class="section-badge" style="background: rgba(2, 132, 199, 0.15); color: var(--primary);">
+            <i class="fa-solid fa-file-pdf"></i> Official Curriculum Vitae
+          </span>
+          <h2 style="font-size: 1.35rem; font-weight: 800; margin-top: 6px; margin-bottom: 2px;">
+            {{ portfolio?.profile?.fullName || 'Lokesh Pon' }} — Civil Engineering Resume
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">
+            B.E. Civil Engineering · BIM Modeler · AutoCAD 2D Drafting · STAAD.Pro Analysis
+          </p>
+        </div>
+
+        <div class="resume-modal-actions">
+          <a
+            href="api/download.php?file=resume&inline=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+            style="padding: 8px 14px; font-size: 0.84rem;"
+            title="Open full PDF in a new browser tab"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>Open in New Tab</span>
+          </a>
+          <button
+            class="btn btn-primary"
+            style="padding: 8px 16px; font-size: 0.84rem;"
+            @click="downloadResume('resume')"
+            title="Download PDF copy to your device"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-modal-body">
+        <iframe
+          src="api/download.php?file=resume&inline=1#view=FitH"
+          class="resume-iframe-viewer"
+          title="Lokesh Pon - Civil Engineering Resume"
+        ></iframe>
+
+        <div class="resume-modal-footer-note">
+          <span><i class="fa-solid fa-circle-info" style="color: var(--primary); margin-right: 6px;"></i>Viewing official verified copy of Lokesh Pon's resume.</span>
+          <a href="api/download.php?file=resume&inline=1" target="_blank" class="text-link" style="color: var(--primary); font-weight: 600; text-decoration: underline;">
+            Tap here if PDF doesn't preview on mobile <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.72rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ==========================================
        PROJECT CASE STUDY MODAL

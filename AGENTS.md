@@ -24,6 +24,7 @@ Professional Civil Engineering Portfolio.
 - Avoid unnecessary dependencies.
 - Test all changes.
 - Explain modifications before implementation.
+- Only push to Git when explicitly requested by the user.
 
 ## Current Goal
 Complete and deploy the LOKI PORTFOLIO website.

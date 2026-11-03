@@ -4,13 +4,11 @@ $inline = isset($_GET['inline']) && $_GET['inline'] === '1';
 
 $baseDir = dirname(__DIR__);
 
-if ($type === 'portfolio') {
-    $filePath     = $baseDir . DIRECTORY_SEPARATOR . 'Portfolio.pdf';
-    $downloadName = 'Lokesh_Pon_Civil_Engineering_Portfolio.pdf';
-} elseif ($type === 'staad') {
+if ($type === 'staad') {
     $filePath     = $baseDir . DIRECTORY_SEPARATOR . 'revit project case study phographs' . DIRECTORY_SEPARATOR . 'Lokesh Pon Final Staad.pdf';
     $downloadName = 'Lokesh_Pon_STAAD_Pro_Structural_Analysis.pdf';
 } else {
+    // Default to resume
     $filePath     = $baseDir . DIRECTORY_SEPARATOR . 'Lokesh pon resume.pdf';
     $downloadName = 'Lokesh_Pon_Civil_Engineering_Resume.pdf';
 }
@@ -32,4 +30,3 @@ header('Pragma: public');
 header('Content-Length: ' . filesize($filePath));
 readfile($filePath);
 exit;
-

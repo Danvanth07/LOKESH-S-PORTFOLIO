@@ -14,8 +14,7 @@
         "github": "https://github.com/Danvanth07/LOKESH-S-PORTFOLIO",
         "avatar": "assets/images/lokesh-photo.jpg",
         "coverPhoto": "assets/images/hero-cover.jpg",
-        "resumePdf": "Lokesh pon resume.pdf",
-        "portfolioPdf": "Portfolio.pdf"
+        "resumePdf": "Lokesh pon resume.pdf"
     },
     "quickStats": [
         {
@@ -36,7 +35,7 @@
     ],
     "about": {
         "summary": "Civil Engineering student with a strong passion for architectural drafting, Building Information Modeling (BIM), and structural design. Experienced in creating high-accuracy 2D municipal drawings, realistic 3D architectural visualizations, and load analysis models. Driven by a commitment to develop practical, structurally resilient, and sustainable built environments.",
-        "academicYear": "Final Year / Pre-Final Year (Expected Graduation: 2027)",
+        "academicYear": "Final Year (Expected Graduation: 2027)",
         "institution": "Government College of Engineering (IRTT), Erode",
         "university": "Affiliated with Anna University, Chennai",
         "areasOfInterest": [
@@ -54,11 +53,6 @@
                 "title": "Structural Design & Analysis",
                 "desc": "RCC space frame modeling, member sizing, and load combination analysis under Indian Standard codes using STAAD.Pro.",
                 "icon": "cpu"
-            },
-            {
-                "title": "Geotechnical & Foundation Engineering",
-                "desc": "Practical field supervision of deep pile foundations, boring, reinforcement cage fabrication, and tremie concreting.",
-                "icon": "layers"
             }
         ],
         "careerObjectives": "To secure a challenging role as a Civil / BIM Engineer in an innovative infrastructure or architectural design consultancy, where I can apply my competencies in Revit, AutoCAD, SketchUp, and STAAD.Pro to deliver accurate, constructible, and sustainable engineering solutions while spearheading the adoption of digital construction workflows.",
